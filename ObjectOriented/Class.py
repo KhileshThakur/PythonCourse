@@ -35,4 +35,25 @@ print(ob)
 # print(str(ob))
 
 
-# 
+# main Method
+
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+def main():
+    print("Choose Option: ")
+    print("1. Addition")
+    print("2. Subtract")
+    choice = input("Enter Choice : ")
+    n1 = int(input("Enter first Number : "))
+    n2 = int(input("Enter Second Number : "))
+    
+    if choice == '1':
+        print(f"result : {add(n1, n2)}")
+    elif choice == '2':
+        print(f"result: {sub(n1, n2)}")
+    else:
+        print("Invalid Number ")
+if __name__=="__main__":
+    main()
