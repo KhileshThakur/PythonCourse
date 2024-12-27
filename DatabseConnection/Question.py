@@ -125,7 +125,8 @@ def get_top_students(limit=3):
             LIMIT %s
         ''', (limit,))
         results = cursor.fetchall()
-        return results
+        for row in results:
+            print(row)
     except Exception as e:
         print("Error retrieving top students:", e)
     finally:
